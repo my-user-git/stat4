@@ -620,6 +620,7 @@ a:active {
     transform: scale(0);
     transition: transform 0.5s ease-in-out;
     transform-origin: right;
+    z-index: 10;
   }
   .header-content__x {
     transform: scale(1);
