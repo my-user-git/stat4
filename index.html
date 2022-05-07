@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header-content">
+      <div class="header-content__logo-wrap">
+        <a href="#" class="logo header-content__logo-header">
+          <picture class="header-content__logo-pic">
+            <source srcset="images/logo-360.png" media="(max-width:360px)">
+            <source srcset="images/logo-1280.png" media="(max-width:1280px)">
+            <img src="images/logo.png" alt="">
+          </picture>
+        </a>
+        <div class="header-content__logo-stribe"></div>
+        <div class="header-content__logo-txt">
+          Надежный сервис <br>
+          аналитики для поставщиков<br>
+          на маркетплейсы
+        </div>
+      </div>
+      <nav class="header-content__nav">
+        <svg class="header-content__x" width="24" height="24" viewbox="0 0 24 24" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="images/icons/sprite.svg#burger-x"></use>
+        </svg>
+        <a href="#" class="header-content__nav-link">Аналитика
+          <svg class="header-content__triangle" width="13" height="12" viewbox="0 0 13 12" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="images/icons/sprite.svg#triangle"></use>
+          </svg>
+
+        </a>
+        <a href="#" class="header-content__nav-link">Обучение</a>
+      </nav>
+      <a href="tel:+74994503141" class="header-content__tel">
+        <svg width="18.76" height="18.75" viewBox="0 0 18.76 18.75" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="images/icons/sprite.svg#icon-tel"></use>
+        </svg>
+        8 (499) 450-31-41
+      </a>
+      <button aria-label="Кнопка входа в личный кабинет" type="button" class="header-content__button">
+        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="images/icons/sprite.svg#arrow-button"></use>
+        </svg>
+        <span class="header-content__button-txt">Войти</span>
+      </button>
+      <div class="header-content__burger">
+        <svg class="header-content__burger-icon" width="42" height="28" viewbox="0 0 42 28" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="images/icons/sprite.svg#burger"></use>
+        </svg>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="section-breadcrumbs">
+      <div class="container section-breadcrumbs__content">
+        <ul class="section-breadcrumbs__list">
+          <li class="section-breadcrumbs__item">Главная</li>
+          <li class="section-breadcrumbs__item">&mdash;</li>
+          <li class="section-breadcrumbs__item">Обучение</li>
+        </ul>
+      </div>
+    </section>
+    <section class="section-hero">
+      <div class="container section-hero__content">
+        <h1 class="heading section-hero__heading-h1">
+          <span>Обучающие курсы</span> для поставщиков на маркетплейсы
+        </h1>
+        <div class="section-hero__course">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="images/icons/sprite.svg#course"></use>
+          </svg>
+          <div class="section-hero__price">от <span class="section-hero__rub">19 900</span><span
+              class="section-hero__currency">&#8381;</span></div>
+        </div>
+        <div class="section-hero__desc">
+          <span>Обучающие курсы по работе и продвижению на маркетплейсах от практикующих селлеров</span>
+          <span>Добро пожаловать в Академию. Это место для эффективного обучения, где мы рассказываем, как работают
+            маркетплейсы и никогда не вдаемся
+            в теорию, которая не понадобится на практике.
+          </span>
+          <span>Наши уроки помогут понять логику работы площадок и взять управление продажами в свои руки, а не действовать наугад. Становись экспертом в работе с маркетплейсами и увеличивай свою прибыль — мы разработали курсы, которые приведут тебя к результату быстро и захватывающе.</span>
+        </div>
+        <picture class="section-hero__bg-super">
+          <source srcset="images//superman-768.png" media="(max-width:768px)">
+          <source srcset="images//superman-1280.png" media="(max-width:1280px)">
+          <img src="images/superman.png" alt="">
+        </picture>
+      </div>
+    </section>
+    <section class="section-history">
+      <article class="container section-history__content">
+        <h2 class="heading section-history__heading-h2 open">Небольшая предыстория о том, <br> почему нам можно доверять
+        </h2>
+        <h2 class="heading section-history__heading-h2 hidden">Как работает модуль Аналитика по API для
+          Wildberries?
+        </h2>
+        <picture class="section-history__pic-1">
+          <source srcset="images/story-1-768.png" media="(max-width:768px)">
+          <source srcset="images/story-1-1280.png" media="(max-width:1280px)">
+          <img src="images/story-1.png" alt="">
+        </picture>
+        <p class="section-history__desc-1">
+          Свой путь в бизнесе мы начали в 2016 г. У нас были свои островные магазины в крупных ТЦ Москвы («Европейский»,
+          «Метрополис», «Мега» и др.), а также свой интернет-магазин. Мы накопили большой опыт в продвижении своих
+          товаров
+          за счет многочисленных запусков разных рекламных каналов и работы с блогерами.
+        </p>
+        <picture class="section-history__pic-2">
+          <source srcset="images/story-2-768.png" media="(max-width:768px)">
+          <source srcset="images/story-2-1280.png" media="(max-width:1280px)">
+          <img src="images/story-2.png" alt="">
+        </picture>
+        <p class="section-history__desc-2">
+          <span>
+            Летом 2019 года мы вышли на маркетплейсы и после работы с ними в течение 2 месяцев приняли решение развивать
+            только это направление. И не прогадали. Весь накопленный опыт мы направили на улучшение и продвижение наших
+            брендов.
+          </span>
+          <span>
+            Пришло время поделится знаниями и лайфхаками, которые будут собраны и доступны в нашей Академии stat4market.
+          </span>
+        </p>
+      </article>
+    </section>
+    <section class="section-market">
+      <div class="container section-market__content">
+        <h2 class="heading section-market__heading-h2">
+          Обучение по продажам на <br> маркетплейсах от <span class="section-market__name">stat<span
+              class="section-market__for">4</span>market</span>
+        </h2>
+        <p class="section-market__desc">
+          «Увеличение реальной прибыли, конкретика и ключевые инструменты,
+          которые дают результат» — на этом тезисе созданы наши курсы
+        </p>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container footer__content">
+      <ul class="footer__list">
+        <li class="footer__item">
+          <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="images/icons/sprite.svg#target"></use>
+          </svg>
+          <h3 class="heading footer__heading-h3">
+            Наше обучение построено очень лаконично и просто
+          </h3>
+          <p class="footer__item-desc">
+            Все занятия короткие по продолжительности для легкого восприятия и понимания. Мы даем в уроках только
+            конкретику, без лишней теории и “воды”.
+          </p>
+        </li>
+        <li class="footer__item">
+          <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="images/icons/sprite.svg#site"></use>
+          </svg>
+          <h3 class="heading footer__heading-h3">
+            Ко всем урокам есть дополнительные материалы
+          </h3>
+          <p class="footer__item-desc">
+            Презентации, краткие инструкции, чек-листы и памятки по работе с маркетплейсами.
+          </p>
+        </li>
+        <li class="footer__item">
+          <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="images/icons/sprite.svg#friends"></use>
+          </svg>
+          <h3 class="heading footer__heading-h3">
+            Наше обучение — практико-ориентированное
+          </h3>
+          <p class="footer__item-desc">
+            Поэтому после прохождения уроков ты будешь выполнять задания, которые помогут тебе закрепить полученные
+            знания на практике.
+          </p>
+        </li>
+        <li class="footer__item">
+          <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="images/icons/sprite.svg#icons"></use>
+          </svg>
+          <h3 class="heading footer__heading-h3">
+            Создатели нашей Академии
+          </h3>
+          <p class="footer__item-desc">
+            Действующие селлеры с большим опытом в продажах на маркетплейсах, эксперты компании stat4market, а также
+            профессиональные лекторы и методологи.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+
+</html>

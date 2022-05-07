@@ -1,0 +1,44 @@
+a {
+  transition: color .3s ease-in-out;
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: $magentaCE;
+}
+
+.header-content {
+  &__button {
+    position: relative;
+    transition: background-color .3s ease-in-out;
+    cursor: pointer;
+
+    &::after {
+      position: absolute;
+      content: '';
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      border-radius: 12px;
+      transition: border .3s ease-in-out;
+    }
+
+    &:hover.header-content__button::after,  &:focus.header-content__button::after {
+      border: 1px solid $magentaCE;
+    }
+  }
+
+  &__button:hover, &__button:focus {
+    background-color: $white;
+  }
+
+  &__button:hover .header-content__button-txt, &__button:focus .header-content__button-txt {
+    color: $magentaCE;
+  }
+
+  &__button:hover svg, &__button:focus svg {
+    color: $magentaCE;
+  }
+}

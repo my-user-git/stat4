@@ -1,0 +1,73 @@
+/* hero */
+
+.section-hero {
+  &__content {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "h1 bg"
+    "price bg"
+    "desc bg";
+    column-gap: 42px;
+  }
+
+  &__heading-h1 {
+    grid-area: h1;
+  }
+
+  &__course {
+    grid-area: price;
+  }
+
+  &__desc {
+    grid-area: desc;
+  }
+
+  &__bg-super {
+    grid-area: bg;
+    margin-top: -5px;
+  }
+}
+
+/* history */
+
+.section-history {
+  &__content {
+    display: grid;
+    grid-template-columns: minmax(auto, 1.5fr) 1fr minmax(auto, 1.5fr);
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas:
+    "h2 h2 h2"
+    "pic-1 desc-1 desc-1"
+    "desc-2 desc-2 pic-2";
+    column-gap: 23px;
+  }
+
+  &__heading-h2 {
+    grid-area: h2;
+  }
+
+  &__pic-1 {
+    grid-area: pic-1;
+  }
+
+  &__pic-2 {
+    grid-area: pic-2;
+  }
+
+  &__desc-1 {
+    grid-area: desc-1;
+    width: 89%;
+  }
+
+  &__desc-2 {
+    grid-area: desc-2;
+    width: 90%;
+  }
+}
+
+
