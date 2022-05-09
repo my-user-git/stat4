@@ -99,6 +99,7 @@ body {
       &-wrap {
         display: flex;
         width: 30.5%;
+        min-width: 447px;
         height: 100%;
         justify-content: space-between;
         align-items: center;
@@ -127,6 +128,7 @@ body {
       position: relative;
       display: flex;
       width: 19.9%;
+      min-width: 267px;
       justify-content: space-between;
       align-items: flex-start;
       margin-right: auto;
@@ -142,7 +144,7 @@ body {
     &__tel {
       display: flex;
       align-items: center;
-      margin-right: 6%;
+      margin-right: auto;
       font-size: 24px;
       line-height: 35px;
       font-weight: 400;
@@ -231,7 +233,7 @@ body {
   margin-bottom: 145px;
 
   &__heading-h1 {
-    margin-bottom: 13px;
+    margin-bottom: 20px;
     font-family: $fontBold, $fontStandart;
     font-size: 56px;
     line-height: 80px;
@@ -278,7 +280,7 @@ body {
     margin-right: 25px;
   }
 
-  &__desc span {
+  &__desc-txt {
     display: inline-block;
     font-size: 25px;
     line-height: 160%;
@@ -286,8 +288,12 @@ body {
     color: $grey2F80;
   }
 
-  &__desc span:not(:last-child) {
+  &__desc-txt:not(:last-child) {
     margin-bottom: 15px;
+  }
+
+  &__desc-txt .hidden {
+    display: none;
   }
 }
 

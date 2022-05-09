@@ -116,6 +116,7 @@ body {
 .header-content__logo-wrap {
   display: flex;
   width: 30.5%;
+  min-width: 447px;
   height: 100%;
   justify-content: space-between;
   align-items: center;
@@ -140,6 +141,7 @@ body {
   position: relative;
   display: flex;
   width: 19.9%;
+  min-width: 267px;
   justify-content: space-between;
   align-items: flex-start;
   margin-right: auto;
@@ -153,7 +155,7 @@ body {
 .header-content__tel {
   display: flex;
   align-items: center;
-  margin-right: 6%;
+  margin-right: auto;
   font-size: 24px;
   line-height: 35px;
   font-weight: 400;
@@ -229,7 +231,7 @@ body {
   margin-bottom: 145px;
 }
 .section-hero__heading-h1 {
-  margin-bottom: 13px;
+  margin-bottom: 20px;
   font-family: "Lato-Bold", Arial, Helvetica, sans-serif;
   font-size: 56px;
   line-height: 80px;
@@ -269,15 +271,18 @@ body {
 .section-hero__course svg {
   margin-right: 25px;
 }
-.section-hero__desc span {
+.section-hero__desc-txt {
   display: inline-block;
   font-size: 25px;
   line-height: 160%;
   font-weight: 400;
   color: rgba(51, 26, 47, 0.8);
 }
-.section-hero__desc span:not(:last-child) {
+.section-hero__desc-txt:not(:last-child) {
   margin-bottom: 15px;
+}
+.section-hero__desc-txt .hidden {
+  display: none;
 }
 
 /* section-history */
@@ -474,7 +479,7 @@ a:active {
 }
 
 /* breakpoint 1 1280 */
-@media (max-width: 1370px) {
+@media (max-width: 1280px) {
   body {
     background: url("images/bg-left-1280.png") no-repeat left top transparent, none;
   }
@@ -483,11 +488,17 @@ a:active {
     height: 62px;
   }
   .header-content__logo-wrap {
-    width: 29.1%;
-    margin-right: 4.9%;
+    min-width: 333px;
+    margin-right: auto;
+  }
+  .header-content__logo-stribe {
+    margin: 0 5px;
   }
   .header-content__triangle {
     margin-left: 8px;
+  }
+  .header-content__nav {
+    min-width: 210px;
   }
   .header-content__logo-txt {
     font-size: 10px;
@@ -498,7 +509,6 @@ a:active {
     line-height: 35px;
   }
   .header-content__tel {
-    margin-right: 7.9%;
     font-size: 18px;
     line-height: 35px;
   }
@@ -521,10 +531,10 @@ a:active {
   }
 
   .section-hero {
-    margin-bottom: 78px;
+    margin-bottom: 63px;
   }
   .section-hero__content {
-    grid-template-columns: 1.5fr minmax(auto, 458px);
+    grid-template-columns: 1.6fr 1fr;
     -moz-column-gap: 8px;
          column-gap: 8px;
   }
@@ -533,14 +543,14 @@ a:active {
     font-size: 46px;
     line-height: 65px;
   }
-  .section-hero__desc span {
+  .section-hero__desc-txt {
     font-size: 20px;
   }
   .section-hero__course {
     margin-bottom: 46px;
   }
   .section-hero__bg-super {
-    margin-top: -49px;
+    margin-top: -57px;
   }
 
   .section-history {
@@ -585,7 +595,7 @@ a:active {
   }
 }
 /* breakpoint 2 768 */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   body {
     background: none;
   }
@@ -604,7 +614,10 @@ a:active {
     height: 62.7px;
   }
   .header-content__logo-wrap {
-    width: 45.1%;
+    min-width: 372px;
+  }
+  .header-content__logo-stribe {
+    margin: 0 10px;
   }
   .header-content__nav {
     position: absolute;
@@ -621,6 +634,9 @@ a:active {
     transition: transform 0.5s ease-in-out;
     transform-origin: right;
     z-index: 10;
+  }
+  .header-content__button {
+    margin-right: auto;
   }
   .header-content__x {
     transform: scale(1);
@@ -640,7 +656,7 @@ a:active {
   }
   .section-hero__content {
     display: grid;
-    grid-template-columns: minmax(auto, 482px) 1fr;
+    grid-template-columns: 1.6fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: "h1 h1" "price bg" "desc bg";
     -moz-column-gap: 26px;
@@ -680,6 +696,7 @@ a:active {
     row-gap: 81px;
   }
   .section-history__heading-h2 {
+    width: 83%;
     margin-bottom: 0;
     margin-left: -8px;
   }
@@ -716,8 +733,19 @@ a:active {
     margin-bottom: 60px;
   }
 }
-/* breakpoint 2 360 */
-@media (max-width: 360px) {
+/* breakpoint 3 768 */
+@media (max-width: 768px) {
+  .section-hero__content {
+    grid-template-columns: 2fr 1fr;
+    -moz-column-gap: 32px;
+         column-gap: 32px;
+  }
+  .section-hero__desc .hidden {
+    display: inline;
+  }
+}
+/* breakpoint 4 360 */
+@media (max-width: 650px) {
   .container {
     padding-left: 13px;
     padding-right: 15px;
@@ -734,6 +762,7 @@ a:active {
   }
   .header-content__logo-wrap {
     width: auto;
+    min-width: auto;
     margin-right: auto;
   }
   .header-content__burger {
@@ -800,7 +829,8 @@ a:active {
   }
   .section-hero__bg-super {
     position: absolute;
-    top: -44px;
+    top: 0;
+    right: 0;
     margin-top: 0;
   }
 

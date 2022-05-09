@@ -1,6 +1,6 @@
 /* breakpoint 1 1280 */
 
-@media (max-width: 1370px) {
+@media (max-width: 1280px) {
 
   body {
     background: url('images/bg-left-1280.png') no-repeat left top transparent, none;
@@ -10,12 +10,20 @@
     height: 62px;
 
     &__logo-wrap {
-      width: 29.1%;
-      margin-right: 4.9%;
+      min-width: 333px;
+      margin-right: auto;
+    }
+
+    &__logo-stribe {
+      margin: 0 5px;
     }
 
     &__triangle {
       margin-left: 8px;
+    }
+
+    &__nav {
+      min-width: 210px;
     }
 
     &__logo-txt {
@@ -29,7 +37,6 @@
     }
 
     &__tel {
-      margin-right: 7.9%;
       font-size: 18px;
       line-height: 35px;
     }
@@ -57,10 +64,10 @@
   }
 
   .section-hero {
-    margin-bottom: 78px;
+    margin-bottom: 63px;
 
     &__content {
-      grid-template-columns: 1.5fr minmax(auto, 458px);
+      grid-template-columns: 1.6fr 1fr;
       column-gap: 8px;
     }
 
@@ -70,7 +77,7 @@
       line-height: 65px;
     }
 
-    &__desc span {
+    &__desc-txt {
       font-size: 20px;
     }
 
@@ -79,7 +86,7 @@
     }
 
     &__bg-super {
-      margin-top: -49px;
+      margin-top: -57px;
     }
   }
 
@@ -137,7 +144,7 @@
 
 /* breakpoint 2 768 */
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   body {
     background: none;
   }
@@ -156,7 +163,11 @@
     height: 62.7px;
 
     &__logo-wrap {
-      width: 45.1%;
+      min-width: 372px;
+    }
+
+    &__logo-stribe {
+      margin: 0 10px;
     }
 
     &__nav {
@@ -174,6 +185,10 @@
       transition: transform .5s ease-in-out;
       transform-origin: right;
       z-index: 10;
+    }
+
+    &__button {
+      margin-right: auto;
     }
 
     &__x {
@@ -198,7 +213,7 @@
 
     &__content {
       display: grid;
-      grid-template-columns: minmax(auto, 482px) 1fr;
+      grid-template-columns: 1.6fr 1fr;
       grid-template-rows: auto;
       grid-template-areas:
         "h1 h1"
@@ -246,6 +261,7 @@
     }
 
     &__heading-h2 {
+      width: 83%;
       margin-bottom: 0;
       margin-left: -8px;
     }
@@ -291,9 +307,25 @@
 }
 
 
-/* breakpoint 2 360 */
+/* breakpoint 3 768 */
 
-@media (max-width: 360px) {
+@media (max-width: 768px) {
+  .section-hero {
+    &__content {
+      grid-template-columns: 2fr 1fr;
+      column-gap: 32px;
+    }
+
+    &__desc .hidden {
+      display: inline;
+    }
+  }
+}
+
+
+/* breakpoint 4 360 */
+
+@media (max-width: 650px) {
   .container {
     padding-left: 13px;
     padding-right: 15px;
@@ -310,6 +342,7 @@
 
     &__logo-wrap {
       width: auto;
+      min-width: auto;
       margin-right: auto;
     }
 
@@ -393,7 +426,8 @@
 
     &__bg-super {
       position: absolute;
-      top: -44px;
+      top: 0;
+      right: 0;
       margin-top: 0;
     }
   }
